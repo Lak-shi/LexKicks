@@ -1,0 +1,43 @@
+img {
+  border: 3px solid #ececec;
+  max-width: 100%;
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+figure {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 auto; /* Center the figure horizontally */
+  max-width: 100%;
+  text-align: center; /* Center-align the content inside the figure */
+}
+
+figure img {
+  max-height: 800px;
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto; /* Center the image within the figure */
+}
+
+@media screen and (min-width: 600px) {
+  figure {
+    padding: 0 40px;
+  }
+}
+
+figure h4 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1em;
+  text-align: center; /* Center-align the caption text */
+}
+
+figure h4::before {
+  content: "↳ ";
+}
+
+svg {
+  max-height: 15px;
+  display: block; /* Ensure the SVG is treated as a block element */
+  margin: 0 auto; /* Center the SVG */
+}
